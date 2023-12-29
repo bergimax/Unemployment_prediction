@@ -1,4 +1,4 @@
-# unemployment_prediction
+# Unemployment Prediction
 ML project about the uneployment rate in each state. This is a Project for mlzoomcamp course by Datatalks ( https://datatalks.club/ )
 
 ![](images.jpg)
