@@ -19,7 +19,7 @@ The target of this project is to predict the current value of the unemployed for
 
 ## 3 - Data
 
-The data was obtained from this repository which processed the data from https://data.worldbank.org/: 
+The data was obtained from this repository which processed the data from https://data.worldbank.org/ : 
 https://www.kaggle.com/datasets/mittvin/world-economic-indicators-1960-2022-dataset
 
 Important details about the data:
@@ -34,7 +34,7 @@ Important details about the data:
 - GDP Growth (Annual %): Another measure of the annual percentage increase in Gross Domestic Product (GDP) from the previous year, potentially from a different source or calculation.
 
 I uploaded the entire dataset to the repository. File: *world_economic_indicators.csv* in the data directory.
-This data is processed using the ``train.py`` file, that build the model ''.bin''.
+This data is processed using the ``train.py`` file, that creates the model ``.bin``.
 
 After EDA, i decided to delete some columns based on the redundant value already present in the dataset. I cut:
 - Country Name: info already present in the country code.
@@ -55,13 +55,6 @@ After EDA, i decided to delete some columns based on the redundant value already
 - **test.py**: contains some values to test the model
 - **train.py**: contains the model with the best performance in the testing set, obtained using the notebook
 - **Dockerfile**: contains the image for the docker
-
-### Folder '**Proof of working**'
-- **docker running.png**: screenshot of the docker built running
-- **docker_running.mp4**: video of the docker built running and the prediction
-- **flask running.png**: screenshot of the flask app running in local
-- **flask_running.mp4**: video of the flask built running and the prediction
-- **gunicorn running.mp4**: video of the gunicorn built running and the prediction
 
 ---
 ## 5 - Loading final model into a service:
@@ -123,9 +116,3 @@ vi test.py
 P.S: The current values in test.py are taken from the dataset, raw number 16608, for the Italy, my country.
 
 ---
-
-#### Video of the service running :
-I loaded a small video where you can see how the service works, everything it's in the 'Proof of working' folder.
-
-The video show the local service starting in Docker and how it respond to the test.py
-I also attached the screenshot of the service running with flask and gunicorn.
